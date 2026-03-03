@@ -1,1 +1,173 @@
-<img src="bake.jpg">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Little Abrm Bakes</title>
+
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FFF3E6;
+    font-family: "Berlin Sans FB", sans-serif;
+    text-align: center;
+}
+
+/* Navigation */
+nav {
+    background-color: #F5C1CC;
+    padding: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    margin: 15px;
+    font-family: "Segoe Script";
+    font-weight: bold;
+    color: #5A3E36;
+    font-size: 20px;
+}
+
+/* Home Section */
+#home {
+    padding: 60px 20px;
+}
+
+.title {
+    font-family: "TAN Mon Cheri", cursive;
+    font-size: 52px;
+    color: #5A3E36;
+}
+
+.slogan {
+    font-family: "Sigher", cursive;
+    font-size: 20px;
+    color: #8B5E5E;
+    margin-top: 10px;
+}
+
+.cupcake img {
+    width: 250px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+
+/* About Section */
+#about {
+    background-color: #FFF0F5;
+    padding: 50px 20px;
+}
+
+/* Headings */
+.heading {
+    font-family: "Segoe Script";
+    font-weight: bold;
+    color: #5A3E36;
+    margin-top: 40px;
+}
+
+/* About Us Title */
+.about-title {
+    font-family: "Bernoru Semi Condensed", cursive;
+    font-size: 63.6px;
+    color: #5A3E36;
+}
+
+/* About paragraph */
+.about-text {
+    font-family: "B612", sans-serif;
+    font-size: 33.3px;
+    color: #6B4E4E;
+}
+
+/* Forte sections */
+.section-text {
+    font-family: "Forte";
+    font-size: 22px;
+    color: #6B4E4E;
+}
+
+/* Footer */
+footer {
+    background-color: #F5C1CC;
+    padding: 20px;
+    font-family: "Berlin Sans FB";
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+</nav>
+
+<!-- HOME PAGE -->
+<section id="home">
+    <div class="title">Little ABRM Bakes</div>
+    <div class="slogan">Tiny Bites, Big Happiness ✨</div>
+
+    <div class="cupcake">
+        <img src="cupcake.jpg" alt="Cupcake Image">
+    </div>
+</section>
+
+<!-- ABOUT PAGE -->
+<section id="about">
+
+<div class="about-title">About Us</div>
+
+<p class="about-text">
+Little Abrm Bakes is a home-based bakery that offers fresh and delicious mini desserts such as mini cakes, cupcakes, donuts, cookies, brownies, and custom sweet treats. Every item is handmade with love, using quality ingredients to bring happiness in every bite. Perfect for celebrations, gifts, and sweet cravings.
+</p>
+
+<h2 class="heading">Mission</h2>
+<p class="section-text">
+Our mission is to provide fresh, homemade and high-quality baked treats that bring happiness in every bite.
+</p>
+
+<h2 class="heading">Vision</h2>
+<p class="section-text">
+Our vision is to become a trusted and loved mini bakery brand known for delicious small treats and beautiful presentation.
+</p>
+
+<h2 class="heading">Brand Value</h2>
+<p class="section-text">
+We believe:<br>
+Small things create big happiness,<br>
+Quality matters,<br>
+Homemade with love.
+</p>
+
+<h2 class="heading">Conclusion</h2>
+<p class="section-text">
+Little Abrm Bakes focuses on delivering fresh and high-quality mini desserts that bring joy and sweetness to everyday moments and small celebrations.
+</p>
+
+<h2 class="heading">Contact</h2>
+<p class="section-text">
+Location: Butwal, Rupandehi, Nepal<br>
+Contact no: 9768281253,<br>
+9745416869,<br>
+9811966295,<br>
+9821591982<br>
+Email: abrmbakes005gmail.com<br>
+Opens: 9AM-9PM except Saturday
+</p>
+
+<h2 class="heading">Quick Links</h2>
+<p class="section-text">
+<a href="https://www.instagram.com/littleabrmbakes?igsh=cTQwNGFxdWJvaTIz" target="_blank">
+Instagram: Little Abrm Bakes
+</a>
+</p>
+
+</section>
+
+<footer>
+© 2026 Little Abrm Bakes – Tiny Bites, Big Happiness ✨
+</footer>
+
+</body>
+</html>
