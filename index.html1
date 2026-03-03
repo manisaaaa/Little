@@ -8,165 +8,150 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #FFF3E6;
     font-family: "Berlin Sans FB", sans-serif;
+    background-color: #FFF6ED;
+    color: #4A2C2A;
+}
+
+/* Header */
+header {
+    background-color: #F4C2C2;
     text-align: center;
+    padding: 20px;
 }
 
-/* Navigation */
-nav {
-    background-color: #F5C1CC;
-    padding: 15px;
-}
-
-nav a {
-    text-decoration: none;
-    margin: 15px;
-    font-family: "Segoe Script";
+header h1 {
+    font-family: "Segoe Script", cursive;
     font-weight: bold;
-    color: #5A3E36;
-    font-size: 20px;
+    font-size: 42px;
 }
 
-/* Home Section */
-#home {
-    padding: 60px 20px;
+/* Section box */
+section {
+    width: 85%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #FFFDF9;
+    border-radius: 15px;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
 }
 
+/* Section titles */
 .title {
-    font-family: "TAN Mon Cheri", cursive;
-    font-size: 52px;
-    color: #5A3E36;
-}
-
-.slogan {
-    font-family: "Sigher", cursive;
-    font-size: 20px;
-    color: #8B5E5E;
-    margin-top: 10px;
-}
-
-.cupcake img {
-    width: 250px;
-    margin-top: 30px;
-    border-radius: 20px;
-}
-
-/* About Section */
-#about {
-    background-color: #FFF0F5;
-    padding: 50px 20px;
-}
-
-/* Headings */
-.heading {
-    font-family: "Segoe Script";
+    font-family: Forte, cursive;
     font-weight: bold;
-    color: #5A3E36;
-    margin-top: 40px;
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #8B4513;
 }
 
-/* About Us Title */
-.about-title {
-    font-family: "Bernoru Semi Condensed", cursive;
-    font-size: 63.6px;
-    color: #5A3E36;
-}
-
-/* About paragraph */
-.about-text {
-    font-family: "B612", sans-serif;
-    font-size: 33.3px;
-    color: #6B4E4E;
-}
-
-/* Forte sections */
-.section-text {
-    font-family: "Forte";
-    font-size: 22px;
-    color: #6B4E4E;
+ul {
+    margin-left: 20px;
 }
 
 /* Footer */
 footer {
-    background-color: #F5C1CC;
-    padding: 20px;
-    font-family: "Berlin Sans FB";
+    background-color: #F4C2C2;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    font-family: "Segoe Script", cursive;
+    font-weight: bold;
+}
+
+a {
+    color: #8B4513;
+    font-weight: bold;
+    text-decoration: none;
 }
 </style>
 </head>
 
 <body>
 
-<nav>
-<a href="#home">Home</a>
-<a href="#about">About</a>
-</nav>
+<header>
+    <h1>Little Abrm Bakes</h1>
+</header>
 
-<!-- HOME PAGE -->
-<section id="home">
-    <div class="title">Little ABRM Bakes</div>
-    <div class="slogan">Tiny Bites, Big Happiness ✨</div>
-
-    <div class="cupcake">
-        <img src="cupcake.jpg" alt="Cupcake Image">
-    </div>
+<section>
+    <div class="title">About Us</div>
+    <p>
+        Little Abrm Bakes is a home-based bakery business that provides fresh and delicious mini baked items such as mini cakes, donuts, cupcakes, cookies, brownies and custom sweet treats. These treats are perfect for birthdays, small celebrations, gifts and personal cravings.
+    </p>
 </section>
 
-<!-- ABOUT PAGE -->
-<section id="about">
+<section>
+    <div class="title">Products / Services</div>
+    <ul>
+        <li>Mini Cake</li>
+        <li>Cupcakes</li>
+        <li>Donuts</li>
+        <li>Desserts</li>
+        <li>Drinks</li>
+        <li>Snacks</li>
+    </ul>
+</section>
 
-<div class="about-title">About Us</div>
+<section>
+    <div class="title">Mission</div>
+    <p>
+        Our mission is to provide fresh, homemade and high-quality baked treats that bring happiness in every bite.
+    </p>
+</section>
 
-<p class="about-text">
-Little Abrm Bakes is a home-based bakery that offers fresh and delicious mini desserts such as mini cakes, cupcakes, donuts, cookies, brownies, and custom sweet treats. Every item is handmade with love, using quality ingredients to bring happiness in every bite. Perfect for celebrations, gifts, and sweet cravings.
-</p>
+<section>
+    <div class="title">Vision</div>
+    <p>
+        Our vision is to become a trusted and loved mini bakery brand known for delicious small treats and beautiful presentation.
+    </p>
+</section>
 
-<h2 class="heading">Mission</h2>
-<p class="section-text">
-Our mission is to provide fresh, homemade and high-quality baked treats that bring happiness in every bite.
-</p>
+<section>
+    <div class="title">Brand Value</div>
+    <p>We believe:</p>
+    <ul>
+        <li>Small things create big happiness</li>
+        <li>Quality matters</li>
+        <li>Homemade with love</li>
+    </ul>
+</section>
 
-<h2 class="heading">Vision</h2>
-<p class="section-text">
-Our vision is to become a trusted and loved mini bakery brand known for delicious small treats and beautiful presentation.
-</p>
+<section>
+    <div class="title">Conclusion</div>
+    <p>
+        Little Abrm Bakes focuses on delivering fresh and high-quality mini desserts that bring joy and sweetness to everyday moments and small celebrations.
+    </p>
+</section>
 
-<h2 class="heading">Brand Value</h2>
-<p class="section-text">
-We believe:<br>
-Small things create big happiness,<br>
-Quality matters,<br>
-Homemade with love.
-</p>
+<section>
+    <div class="title">Contact</div>
+    <p>
+        <strong>Location:</strong> Butwal, Rupandehi, Nepal <br><br>
 
-<h2 class="heading">Conclusion</h2>
-<p class="section-text">
-Little Abrm Bakes focuses on delivering fresh and high-quality mini desserts that bring joy and sweetness to everyday moments and small celebrations.
-</p>
+        <strong>Contact No:</strong><br>
+        9768281253<br>
+        9745416869<br>
+        9811966295<br>
+        9821591982<br><br>
 
-<h2 class="heading">Contact</h2>
-<p class="section-text">
-Location: Butwal, Rupandehi, Nepal<br>
-Contact no: 9768281253,<br>
-9745416869,<br>
-9811966295,<br>
-9821591982<br>
-Email: abrmbakes005gmail.com<br>
-Opens: 9AM-9PM except Saturday
-</p>
+        <strong>Email:</strong> abrmbakes005gmail.com <br><br>
 
-<h2 class="heading">Quick Links</h2>
-<p class="section-text">
-<a href="https://www.instagram.com/littleabrmbakes?igsh=cTQwNGFxdWJvaTIz" target="_blank">
-Instagram: Little Abrm Bakes
-</a>
-</p>
+        <strong>Opens:</strong> 9AM - 9PM (Except Saturday)
+    </p>
+</section>
 
+<section>
+    <div class="title">Quick Links</div>
+    <p>
+        Instagram: 
+        <a href="https://www.instagram.com/littleabrmbakes?igsh=cTQwNGFxdWJvaTIz" target="_blank">
+            Visit Little Abrm Bakes
+        </a>
+    </p>
 </section>
 
 <footer>
-© 2026 Little Abrm Bakes – Tiny Bites, Big Happiness ✨
+    Sweet treats made with love ♥ Little Abrm Bakes
 </footer>
 
 </body>
