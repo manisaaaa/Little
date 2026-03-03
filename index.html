@@ -1,313 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Little Abrm Bakes · homemade mini treats</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<meta charset="UTF-8">
+<title>Little ABRM Bakes</title>
 
-        body {
-            background-color: #fef7f2;  /* creamy base (cream) */
-            font-family: 'Berlin Sans FB', 'Berlin Sans FB Demi', 'Berlin Sans', 'Arial', sans-serif;
-            color: #4a3b2f; /* soft brown for text */
-            line-height: 1.5;
-            padding: 2rem 1rem;
-        }
+<style>
+body{
+    margin:0;
+    font-family: "Segoe UI", sans-serif;
+    background:#fff5ec;
+}
 
-        /* main pastel pink & soft brown accents */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            background: rgba(255, 250, 245, 0.7); /* light cream */
-            backdrop-filter: blur(2px);
-            border-radius: 2.5rem 2.5rem 2rem 2rem;
-            box-shadow: 0 12px 30px rgba(170, 120, 80, 0.12);
-            padding: 2.5rem 2rem;
-            border: 1px solid #f5d9d0; /* soft pinkish edge */
-        }
+/* Header */
+.header{
+    background-image:url("background.jpg");
+    background-size:cover;
+    background-position:center;
+    height:350px;
+    display:flex;
+    align-items:center;
+    padding-left:60px;
+    color:white;
+}
 
-        /* page header */
-        .brand-header {
-            text-align: center;
-            margin-bottom: 3rem;
-        }
+.header-box{
+    background:rgba(0,0,0,0.5);
+    padding:20px 30px;
+    border-radius:12px;
+}
 
-        .brand-header h1 {
-            font-family: 'Segoe Script', 'Segoe UI', 'cursive', 'Brush Script MT', sans-serif;
-            font-size: 3.2rem;
-            font-weight: 700;
-            color: #9b6b4b; /* warmer soft brown */
-            letter-spacing: -0.5px;
-            text-shadow: 2px 2px 0 #fae3db; /* pastel pink shadow */
-            margin-bottom: 0.25rem;
-        }
+.header h1{
+    font-family:Forte;
+    font-size:48px;
+    margin:0;
+}
 
-        .brand-header p {
-            font-size: 1.25rem;
-            color: #b48a75;
-            border-bottom: 2px dashed #f8cfc0;
-            padding-bottom: 1rem;
-            margin-top: 0.25rem;
-            font-style: italic;
-        }
+.header p{
+    font-size:18px;
+}
 
-        /* utility for section headings (Forte is not web‑safe, but we apply Segoe Script as fallback with bold) */
-        .section-heading {
-            font-family: 'Segoe Script', 'Segoe UI', 'cursive', 'Brush Script MT', sans-serif;
-            font-size: 2rem;
-            font-weight: 700;
-            color: #8b5e4a; /* deep soft brown */
-            margin: 1.8rem 0 1rem 0;
-            border-left: 6px solid #f6bcb0; /* pastel pink stripe */
-            padding-left: 1.2rem;
-            letter-spacing: 0.5px;
-        }
+/* About */
+.about{
+    background:#f6c1b3;
+    padding:40px;
+    display:flex;
+    gap:30px;
+    align-items:center;
+}
 
-        /* body text uses Berlin Sans FB */
-        p, li, .text-block, .contact-line, .quick-item {
-            font-family: 'Berlin Sans FB', 'Berlin Sans FB Demi', 'Arial', sans-serif;
-            font-size: 1.2rem;
-            color: #4d3e33;
-        }
+.about img{
+    width:350px;
+    border-radius:15px;
+}
 
-        /* product/service grid */
-        .product-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 1rem;
-            margin: 1.5rem 0 0.5rem 0;
-        }
+.about h2{
+    font-family:Forte;
+    font-size:36px;
+}
 
-        .product-item {
-            background: #fdefe8;  /* very light pastel pink */
-            padding: 0.9rem 0.5rem;
-            text-align: center;
-            border-radius: 40px 20px 40px 20px;
-            border: 1px solid #fad5cb;
-            font-weight: 500;
-            box-shadow: 0 4px 8px #f0cfc1;
-            transition: 0.2s ease;
-            font-size: 1.25rem;
-        }
+/* Products */
+.products{
+    padding:40px;
+    text-align:center;
+}
 
-        .product-item:hover {
-            background: #ffe5db;
-            transform: scale(1.02);
-            border-color: #e7b09c;
-        }
+.products h2{
+    font-family:Forte;
+    font-size:36px;
+}
 
-        /* values list (brand value) */
-        .values-list {
-            list-style: none;
-            margin: 1.2rem 0 0.5rem 0;
-        }
+.items{
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+}
 
-        .values-list li {
-            font-family: 'Berlin Sans FB', sans-serif;
-            font-size: 1.25rem;
-            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="%23e8a18b"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>') left center no-repeat;
-            padding-left: 2.2rem;
-            margin-bottom: 0.6rem;
-            background-size: 1.3rem;
-        }
+.item{
+    width:250px;
+    margin:15px;
+}
 
-        /* contacts & quick links row */
-        .info-row {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 2rem 3rem;
-            margin: 2rem 0 1rem 0;
-            background: #fef3ed; /* extra creamy */
-            padding: 1.8rem 2rem;
-            border-radius: 2rem 1rem 2rem 1rem;
-            border: 1px solid #f6cfc0;
-        }
+.item img{
+    width:100%;
+    border-radius:50%;
+}
 
-        .contact-block, .quick-block {
-            flex: 1 1 260px;
-        }
+/* Vision */
+.vision{
+    background:#111;
+    color:white;
+    padding:40px;
+    text-align:center;
+}
 
-        .contact-block p {
-            margin: 0.25rem 0;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
+/* Contact */
+.contact{
+    padding:40px;
+    background:#fff0db;
+    text-align:center;
+}
 
-        .contact-block img.emoji-icon {
-            width: 1.4rem;
-            height: 1.4rem;
-            filter: sepia(30%) hue-rotate(330deg); /* pinkish tint */
-        }
-
-        .quick-link-item {
-            margin: 0.5rem 0;
-        }
-
-        .quick-link-item a {
-            font-family: 'Berlin Sans FB', sans-serif;
-            font-size: 1.3rem;
-            color: #9b6b4b;
-            text-decoration: none;
-            border-bottom: 2px dotted #f5bcb0;
-            transition: 0.2s;
-            word-break: break-all;
-        }
-
-        .quick-link-item a:hover {
-            color: #754c3b;
-            border-bottom: 2px solid #b48a75;
-        }
-
-        /* small decorative elements */
-        .brand-stamp {
-            text-align: center;
-            margin-top: 2.5rem;
-            font-size: 1.15rem;
-            color: #c9957e;
-            border-top: 2px dotted #f4cdc0;
-            padding-top: 2rem;
-        }
-
-        .brand-stamp span {
-            background: #ffefe8;
-            padding: 0.3rem 1.5rem;
-            border-radius: 50px;
-            font-family: 'Segoe Script', cursive;
-            font-size: 1.2rem;
-            color: #9b6b4b;
-        }
-
-        /* phone numbers inline style */
-        .phone-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem 1.2rem;
-            margin: 0.2rem 0 0.4rem;
-        }
-
-        .phone-item {
-            background: #ffdad1; /* pastel pink */
-            padding: 0.2rem 1rem;
-            border-radius: 30px;
-            font-size: 1.1rem;
-            border: 1px solid #eec2b5;
-        }
-
-        hr {
-            border: 1px solid #f8cfc0;
-            margin: 1rem 0;
-            opacity: 0.5;
-        }
-
-        /* force bold style on section headings (already bold via font weight) */
-        strong.section-heading {
-            font-weight: 700; /* extra assurance */
-        }
-
-        /* fallback for segoe script */
-        @supports (font-family: 'Forte') {
-            .section-heading, .brand-header h1 {
-                font-family: 'Forte', 'Segoe Script', cursive;
-            }
-        }
-
-        /* small screens */
-        @media (max-width: 600px) {
-            .container { padding: 1.5rem; }
-            .brand-header h1 { font-size: 2.5rem; }
-        }
-    </style>
+.contact h2{
+    font-family:Forte;
+    font-size:36px;
+}
+</style>
 </head>
+
 <body>
-    <div class="container">
-        <!-- header with bakery name (already Little Abrm Bakes) -->
-        <div class="brand-header">
-            <h1>Little Abrm Bakes</h1>
-            <p>✨ homemade mini happiness ✨</p>
-        </div>
 
-        <!-- ABOUT US section (bold + forte/segoe) -->
-        <div class="section-heading"><strong>About Us</strong></div>
-        <p>Little Abrm Bakes is a home-based bakery business that provides fresh and delicious mini baked items such as mini cakes, donuts, cupcakes, cookies, brownies and custom sweet treats. These treats are perfect for birthdays, small celebrations, gifts and personal cravings.</p>
+<!-- Header -->
+<div class="header">
+  <div class="header-box">
+    <h1>Little ABRM Bakes</h1>
+    <p><b>TINY BITES, BIG HAPPINESS ✨</b></p>
+  </div>
+</div>
 
-        <!-- PRODUCTS / SERVICES section -->
-        <div class="section-heading"><strong>Products / Services</strong></div>
-        <div class="product-grid">
-            <div class="product-item">🍰 Mini cake</div>
-            <div class="product-item">🧁 Cupcakes</div>
-            <div class="product-item">🍩 Donuts</div>
-            <div class="product-item">🍮 Desserts</div>
-            <div class="product-item">🥤 Drinks</div>
-            <div class="product-item">🍪 Snacks</div>
-        </div>
+<!-- About -->
+<div class="about">
+  <img src="bake.jpg" alt="Cupcakes">
+  <div>
+    <h2>About Us</h2>
+    <p>
+    Little Abrm Bakes is a home-based bakery that offers fresh and delicious mini desserts such as mini cakes, cupcakes, donuts, cookies, brownies, and custom sweet treats.
+    Every item is handmade with love, using quality ingredients to bring happiness in every bite.
+    Perfect for celebrations, gifts, and sweet cravings.
+    </p>
+  </div>
+</div>
 
-        <!-- MISSION, VISION side by side on wide? but we keep clear blocks -->
-        <div class="section-heading"><strong>Mission</strong></div>
-        <p>Our mission is to provide fresh, homemade and high-quality baked treats that bring happiness in every bite.</p>
+<!-- Products -->
+<div class="products">
+<h2>Take a bite!</h2>
 
-        <div class="section-heading"><strong>Vision</strong></div>
-        <p>Our vision is to become a trusted and loved mini bakery brand known for delicious small treats and beautiful presentation.</p>
+<div class="items">
+<div class="item">
+<img src="bake.jpg">
+<h3>YUMMY COOKIES</h3>
+<p>Chocolate chip & peanut butter flavors</p>
+</div>
 
-        <!-- BRAND VALUE with bullet list (soft brown & pastel) -->
-        <div class="section-heading"><strong>Brand Value</strong></div>
-        <ul class="values-list">
-            <li>Small things create big happiness</li>
-            <li>Quality matters</li>
-            <li>Homemade with love</li>
-        </ul>
+<div class="item">
+<img src="bake.jpg">
+<h3>MOUTHWATERING CAKES</h3>
+<p>Chocolate, red velvet, vanilla & strawberry</p>
+</div>
 
-        <!-- CONCLUSION -->
-        <div class="section-heading"><strong>Conclusion</strong></div>
-        <p>Little Abrm Bakes focuses on delivering fresh and high-quality mini desserts that bring joy and sweetness to everyday moments and small celebrations.</p>
+<div class="item">
+<img src="bake.jpg">
+<h3>DONUTS</h3>
+<p>Oreo, Dark chocolate, White chocolate, Strawberry</p>
+</div>
+</div>
 
-        <!-- CONTACT & QUICK LINKS together (as per instructions) -->
-        <div class="info-row">
-            <!-- left side: contact -->
-            <div class="contact-block">
-                <div class="section-heading" style="border-left-color: #e7a58f; margin-top: 0; padding-left: 1rem; font-size: 1.9rem;"><strong>Contact</strong></div>
-                <p><span style="min-width: 1.8rem;">📍</span> <strong>Location:</strong> Butwal, Rupandehi, Nepal</p>
-                <p><span style="min-width: 1.8rem;">📞</span> <strong>Contact no:</strong></p>
-                <div class="phone-list">
-                    <span class="phone-item">9768281253</span>
-                    <span class="phone-item">9745416869</span>
-                    <span class="phone-item">9811966295</span>
-                    <span class="phone-item">9821591982</span>
-                </div>
-                <p><span style="min-width: 1.8rem;">✉️</span> <strong>Email:</strong> abrmbakes005@gmail.com</p>
-                <p><span style="min-width: 1.8rem;">🕘</span> <strong>Opens:</strong> 9AM–9PM except Saturday</p>
-            </div>
+<br>
 
-            <!-- right side: quick links -->
-            <div class="quick-block">
-                <div class="section-heading" style="border-left-color: #e7a58f; margin-top: 0; padding-left: 1rem; font-size: 1.9rem;"><strong>Quick links</strong></div>
-                <div class="quick-link-item">
-                    <a href="https://www.instagram.com/littleabrmbakes?igsh=cTQwNGFxdWJvaTIz" target="_blank" rel="noopener">📸 Instagram @littleabrmbakes</a>
-                </div>
-                <!-- optionally show raw link as fallback -->
-                <p style="font-size: 0.95rem; margin-top: 0.8rem; color: #ba907b; word-break: break-all;">
-                    🔗 <a href="https://www.instagram.com/littleabrmbakes?igsh=cTQwNGFxdWJvaTIz" style="color: #9b6b4b;">https://www.instagram.com/littleabrmbakes?igsh=cTQwNGFxdWJvaTIz</a>
-                </p>
-                <!-- tiny extra: maybe a dummy cup icon -->
-                <div style="margin-top: 1.5rem; background: #f7dfd6; border-radius: 20px; padding: 0.5rem 1rem; width: fit-content;">
-                    <span style="font-size: 1rem;">🍪 follow for sweet updates</span>
-                </div>
-            </div>
-        </div>
+<div class="items">
+<div class="item">
+<img src="bake.jpg">
+<h3>DESSERT</h3>
+<p>Cheesecake, Strawberry cheesecake & Brownie with ice-cream</p>
+</div>
 
-        <!-- subtle footer with brand colours and values (just for aesthetics) -->
-        <div class="brand-stamp">
-            <span>🍰 soft brown · cream · pastel pink 🧁</span><br>
-            <span style="font-family: 'Berlin Sans FB'; font-size: 1rem; background: none;">#homemadewithlove #minitreats</span>
-        </div>
+<div class="item">
+<img src="bake.jpg">
+<h3>SIGNATURE DISH</h3>
+<p>Tiramisu, Nutella tiramisu & Strawberry tiramisu</p>
+</div>
 
-        <!-- Hidden note: theme colors used (soft brown, cream, pastel pink) – no instruction to display but they're in design -->
-    </div>
-    <!-- done, all sections present with proper bold Forte/Segoe and Berlin Sans FB body -->
+<div class="item">
+<img src="bake.jpg">
+<h3>SNACKS</h3>
+<p>Pancakes, Chocolate chip waffles, Momo, Pizza sandwich</p>
+</div>
+</div>
+</div>
+
+<!-- Vision -->
+<div class="vision">
+<h2>Vision</h2>
+<p>
+Our vision is to become a trusted and loved mini bakery brand known for delicious small treats and beautiful presentation.
+</p>
+
+<h3>Brand Value</h3>
+<p>
+Small things create big happiness…<br>
+Quality matters 😊<br>
+Homemade with love ❤️
+</p>
+</div>
+
+<!-- Contact -->
+<div class="contact">
+<h2>We’d love to hear from you!</h2>
+
+<p>📍 Location: Butwal, Rupandehi, Nepal</p>
+<p>📞 Contact: 9768281253 / 9745416869 / 9811966295 / 9821591982</p>
+<p>📧 Email: abrmbakes005@gmail.com</p>
+<p>⏰ Opens: 9AM – 9PM (except Saturday)</p>
+
+<p>Follow us for sweet updates:</p>
+<p>Instagram: @littleabrmbakes</p>
+
+<p>🍰 soft brown · cream · pastel pink 🍰<br>
+#homemadewithlove #minitreats
+</p>
+</div>
+
 </body>
 </html>
